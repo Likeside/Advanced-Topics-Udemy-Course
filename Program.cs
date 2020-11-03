@@ -15,6 +15,13 @@ namespace Project_2
                
         static void Main(string[] args)
         {
+            string[] namesForDelegate = {"Ksenia", "Alexander", "Ksyushonok", "Sashulya", "Ksyusha"};
+
+            List<string> listOfNamesLessThanSevenChar = DelegatesExample.NameFilter(namesForDelegate, DelegatesExample.ExactlySeven);
+
+            
+            Console.WriteLine(string.Join(",", listOfNamesLessThanSevenChar));
+
 
          #region Linq and Lambda
         List<int> numbers = new List<int>{1, 2, 5, 7, 8, 10, 111, 22, 34}; 
